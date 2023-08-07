@@ -1,0 +1,6 @@
+<div class="center">
+  <button (click)="onButtonClick()">Показать иконку</button>
+  <div *ngIf="showIcon" class="icon-container">
+    <i [ngClass]="['fas', randomIconClass]"></i>
+  </div>
+</div>
